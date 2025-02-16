@@ -1,0 +1,42 @@
+name: zwave-thermostat-TBZ48
+components:
+- id: main
+  capabilities:
+  - id: temperatureMeasurement
+    version: 1
+  - id: thermostatHeatingSetpoint
+    version: 1
+    config:
+      values:
+        - key: "heatingSetpoint.value"
+          range: [ 4, 28 ]
+  - id: thermostatCoolingSetpoint
+    version: 1
+  - id: thermostatMode
+    version: 1
+  - id: thermostatFanMode
+    version: 1
+  - id: thermostatOperatingState
+    version: 1
+    config:
+      values:
+        - key: "thermostatOperatingState.value"
+          enabledValues:
+            - idle
+            - heating
+            - cooling
+            - fan only
+            - pending heat
+            - pending cool
+            - vent economy
+            - aux heat
+            - stage 2 heat
+            - stage 2 cool
+            - stage 2 aux heat
+            - stage 3 aux heat
+  - id: relativeHumidityMeasurement
+    version: 1
+  - id: refresh
+    version: 1
+  categories:
+  - name: Thermostat

@@ -1,0 +1,6 @@
+name: 'Z-Wave Thermostat - TBZ48 with OperatingState'
+packageKey: 'zwave_thermostat_TBZ48'
+permissions:
+  zwave: {}
+description: "SmartThings Edge driver for Linear TBZ48 Z-Wave thermostat"
+vendorSupportInformation: "https://support.smartthings.com"

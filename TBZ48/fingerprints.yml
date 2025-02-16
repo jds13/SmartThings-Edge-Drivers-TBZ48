@@ -1,0 +1,17 @@
+zwaveManufacturer:
+  - id: "linear"
+    deviceLabel: Linear Thermostat
+    manufacturerId: 0x014F
+    productId: 0x5431
+    productType: 0x5442
+    deviceProfileName: zwave-thermostat-TBZ48
+zwaveGeneric:
+  - id: "zwave-thermostat-state"
+    deviceLabel: Z-Wave Thermostat TBZ48 with OperatingState
+    commandClasses:
+      supported:
+        - 0x40
+        - 0x42
+        - 0x44
+    deviceProfileName: zwave-thermostat-TBZ48
+
