@@ -16,7 +16,7 @@
 <li>    0x0A - Stage 2 Aux Heat
 <li>    0x0B - Stage 3 Aux Heat
 </ul>
-<p>The TBZ48 sends "Heating" when it turns on heat signal (Rh wire), "Pending Heat" when it turns heat off, and "Idle" approxmiately one minute after "Pending Heat."</p>
+<p>The TBZ48 sends "Heating" when it turns on heat signal (Rh wire), "Pending Heat" when it turns heat off, and "Idle" five minutes after "Pending Heat."</p>
 
 <p>By default, the TBZ48L thermostat disables thermostatOperatingState messages. This driver initializes Parameter 23 to turn on this feature.</p>
 
