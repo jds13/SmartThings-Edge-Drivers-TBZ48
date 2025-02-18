@@ -1,4 +1,4 @@
-name: 'Z-Wave Thermostat - TBZ48 with OperatingState'
+name: 'Z-Wave Thermostat TBZ48'
 packageKey: 'zwave_thermostat_TBZ48'
 permissions:
   zwave: {}
