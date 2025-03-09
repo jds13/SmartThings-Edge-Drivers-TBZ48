@@ -78,27 +78,6 @@ local function set_setpoint_factory(setpoint_type)
   end
 end
 
-local function hOperatingState()
-  return function(driver, device, command)
-    --- thermostatOperatingStates:
-    ---    0x00 - idle
-    ---    0x01 - heating
-    ---    0x02 - cooling
-    ---    0x03 - fan only
-    ---    0x04 - pending heat
-    ---    0x05 - pending cool
-    ---    0x06 - vent economy
-    ---    0x07 - aux heat
-    ---    0x08 - stage 2 heat
-    ---    0x09 - stage 2 cool
-    ---    0x0A - stage 2 aux heat
-    ---    0x0B - stage 3 aux heat
-    local tstate = ThermostatOperatingState:Get({})
-    device:send(tstate)
-    device:emit_event(capabilities.thermostatOperatingState.thermostatOperatingState(tstate))
-    end
-end
-
 local driver_template = {
   supported_capabilities = {
     capabilities.temperatureAlarm,
